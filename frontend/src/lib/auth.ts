@@ -1,4 +1,4 @@
-import NextAuth from 'next-auth';
+import { AuthOptions } from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
 import GoogleProvider from 'next-auth/providers/google';
 
@@ -6,7 +6,7 @@ import { LoginSchema } from '@/schemas';
 import { api } from '@/lib/axios';
 import authConfig from '@/auth.config';
 
-export const { handlers, signIn, signOut, auth } = NextAuth({
+export const authOptions: AuthOptions = {
   ...authConfig,
   secret: process.env.AUTH_SECRET!,
   session: {
@@ -72,4 +72,4 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       },
     }),
   ],
-});
+};

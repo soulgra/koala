@@ -1,2 +1,1 @@
-import { handlers } from '@/lib/auth';
-export const { GET, POST } = handlers;
+export { default } from 'next-auth/next';
