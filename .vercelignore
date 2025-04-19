@@ -1,0 +1,23 @@
+# 忽略服务器代码
+server/
+
+# 忽略依赖
+node_modules/
+
+# 忽略环境变量
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 忽略构建文件
+.next/
+out/
+
+# 忽略版本控制
+.git/
+.github/
+
+# 忽略日志
+*.log
