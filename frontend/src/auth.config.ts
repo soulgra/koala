@@ -13,7 +13,7 @@ interface CustomToken extends JWT {
   role?: string;
 }
 
-export default {
+export const authOptions: NextAuthConfig = {
   trustHost: true,
   providers: [],
   callbacks: {
@@ -41,4 +41,6 @@ export default {
       return customSession;
     },
   },
-} satisfies NextAuthConfig;
+};
+
+export default authOptions;

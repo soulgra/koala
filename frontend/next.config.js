@@ -6,7 +6,7 @@ const nextConfig = {
   },
   // 避免API路由
   trailingSlash: true,
-  // 移除实验性配置
+  // 简化配置
   reactStrictMode: true,
 };
 
